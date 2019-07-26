@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Character from "../services/characterService";
 import films from "../services/films";
+import "../styles/styles.css";
 
 class CharacterFilter extends Component {
   constructor(props) {
@@ -78,7 +79,7 @@ class CharacterFilter extends Component {
           <div className="col d-flex justify-content-end">
             <div className="dropdown">
               <button
-                className="btn btn-secondary dropdown-toggle"
+                className="btn btn-secondary dropdown-toggle mt-4"
                 id="dropdownMenuLink"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -120,7 +121,7 @@ class CharacterFilter extends Component {
             {this.state.selectedCategry ? (
               <div className="dropdown">
                 <button
-                  className="btn btn-secondary dropdown-toggle"
+                  className="btn btn-secondary dropdown-toggle mt-4"
                   id="dropdownMenuLink"
                   data-toggle="dropdown"
                   aria-haspopup="true"

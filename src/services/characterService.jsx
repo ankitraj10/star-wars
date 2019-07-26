@@ -18,6 +18,22 @@ const Character = {
         }, 1);
       });
   },
+  getSwCharacterDetails(id, callback) {
+    axios
+      .get(Apis.getCharacterDetailsUrl(id))
+      .then(result => {
+        console.log(result);
+        setTimeout(() => {
+          callback(result.data);
+        }, 1);
+      })
+      .catch(error => {
+        console.log(error.response);
+        setTimeout(() => {
+          callback(null);
+        }, 1);
+      });
+  },
   getSwCharacterByFilms(callback) {
     axios
       .get(Apis.getFilmsUrl())

@@ -1,6 +1,9 @@
 export function getCharacterUrl() {
   return "https://swapi.co/api/people";
 }
+export function getCharacterDetailsUrl(id) {
+  return `https://swapi.co/api/people/${id}`;
+}
 export function getFilmsUrl() {
   return "https://swapi.co/api/films";
 }

@@ -1,0 +1,10 @@
+.btn-secondary {
+    background-color: transparent !important;
+    color: grey !important;
+    border-color: grey;
+}
+
+.navbar-title {
+    color: grey !important;
+    font-size: 40px !important;
+}
